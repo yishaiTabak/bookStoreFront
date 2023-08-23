@@ -1,0 +1,39 @@
+div.cart-container {
+    @extend %page-size;
+    @extend %centering;
+    background-color: antiquewhite;
+    .empty-cart-message{
+        text-align: center;
+    }
+    div.cart{
+        width: 100%;
+        max-width: 1000px;
+        @extend %centering;
+        flex-direction: column;
+        h1.cart-header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+        }
+        div.cart-items {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border: 0.5px solid rgb(118, 118, 118);
+        }
+    
+        div.total {
+    
+        }
+    
+        button.check-out {
+            margin-bottom: 20px;
+            padding: 8px 25px;
+            background-color: $myPurple;  
+            font-size: 1.25rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}

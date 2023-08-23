@@ -1,0 +1,113 @@
+div.accounts-page {
+    @extend %page-size;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(137, 43, 226, 0.11);
+    h1.accounts-title {
+        text-align: center;
+    }
+  
+    div.accounts-container {
+        width: 100%;
+        flex: 1;
+        @extend %centering;
+        
+      div.edit-container {
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: bisque ;
+        padding: 40px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 460px;
+        height: 60vh;
+        @media (max-width:500px){
+          padding: 10px 45px;
+          max-width: 310px;
+          
+        }
+        form.user-form {
+            h2.user-form-title{
+                text-align: center;
+                margin: 0;
+            }
+          .input-container{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5px;
+            input.input {
+                padding: 12px 20px;
+                border-radius: 5px;
+                width: 300px;
+                @media (max-width:500px){
+                  width: 220px;
+                }
+              }
+          div.invalid-message {
+            color: red;
+            font-size: 0.85rem;
+          }
+        }
+        .user-form-submit{
+          @extend %orange-button;
+          width: 100%;
+          padding: 5px;
+          margin-top: 10px;
+          
+        }
+
+      }
+  
+        div.delete-container {
+          display: flex;
+          flex-direction: column;
+          @media (max-width:500px){
+            max-width: 220px;
+          }
+          .delete-account {
+            @extend %delete-btn;
+            margin-bottom:10px ;
+            
+          }
+  
+          div.want-to-delete {
+            display: flex;
+            flex-direction: column;
+            div {
+              font-weight: 700;
+              font-size: 0.8rem;
+            }
+  
+            .buttons-container{
+              display: flex;
+              justify-content: space-evenly;
+              .no-btn{
+                @extend %delete-btn;
+                background-color: antiquewhite
+              }
+              .yes-btn{
+                @extend %delete-btn;
+              }
+            }
+          }
+        }
+      }
+    }
+      div.modal-text {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .close{
+        margin: 0 auto;
+        display: block;
+        margin: auto;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: burlywood;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+  }

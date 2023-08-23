@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+}
+
+$myPurple: rgba(137, 43, 226, 0.18);
+
+%page-size{
+    width: 100%;
+    margin-top: 4rem;
+    min-height: calc(100vh - 4rem);
+}
+%centering{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%orange-button{
+    width: 40%;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgb(255, 181, 44);
+    font-size: 1.4rem;
+}
+%add-to-cart-btn{
+        padding: 5px;
+        border-radius: 5px;
+        background-color: orange;
+        font-size: 1rem;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(49, 49, 49);
+            color: orange;
+        }
+}
+%delete-btn{
+    background-color: red;
+    padding: 10px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}

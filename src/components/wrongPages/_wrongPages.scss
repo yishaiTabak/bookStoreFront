@@ -1,0 +1,8 @@
+div.wrong-page {
+    @extend %page-size;
+    @extend %centering;
+    div.message {
+        font-size: 3rem;
+        text-align: center;
+    }
+  }

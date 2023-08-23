@@ -1,0 +1,110 @@
+div.cart-item-container {
+    width: 100%;
+    display: flex;
+    border: 0.5px solid rgb(118, 118, 118);
+    padding: 10px;
+    justify-content: space-between;
+    .book-details {
+      display: flex;
+    img {
+        width: 100px;
+        height: 150px;
+        cursor: pointer;
+    }
+  
+    div.item-details-container {
+        padding: 5px 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      div.name-and-author {
+        div.name {
+            font-size: 1.4rem;
+        }
+  
+        div.author {
+            font-size: 0.9rem;
+        }
+      }
+  
+      div.price-and-quantity {
+
+        div.price {
+  
+        }
+  
+        div.quantity-container {
+            display: flex;
+            gap: 2px;
+          button.minus {
+            transform: scale(0.8);
+          }
+  
+          div.quantity {
+            font-size: 1.1rem;
+          }
+  
+          button.plus {
+            transform: scale(0.8);
+          }
+        }
+      }
+    }
+  }
+  
+    .garbage-icon{
+        width: 35px;
+        height: 35px;
+        @extend %centering;
+        border-radius: 50%;
+        background-color: rgba(142, 142, 142, 0.356);
+        cursor: pointer;
+    }
+  }
+  @media (max-width: 500px){
+    div.cart-item-container {
+      div.book-details {
+        img {
+          width: 80px;
+          height: 120px;
+        }
+    
+        div.item-details-container {
+          div.name-and-author {
+            div.name {
+              font-size: 1.2rem;
+            }
+    
+            div.author {
+              font-size: 0.75rem;
+            }
+          }
+    
+          div.price-and-quantity {
+            showprice {
+              div.quantity-container {
+                button.minus {
+    
+                }
+    
+                div.quantity {
+                  font-size: 0.1rem;
+                }
+    
+                button.plus {
+    
+                }
+              }
+            }
+          }
+        }
+      }
+    
+      div.garbage-icon {
+        fontawesomeicon {
+    
+        }
+      }
+    }
+}

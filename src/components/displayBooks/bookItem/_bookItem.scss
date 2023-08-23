@@ -1,0 +1,37 @@
+div.item-container {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    width: 190px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+    img.item-img {
+        margin: 0 auto;
+        width: 90%;
+        height: 60%;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.7;
+        }
+    }
+    div.name-and-author{
+        display: flex;
+        flex-direction: column;
+        p.author {
+            margin: 0;
+            font-size: 0.7rem;
+        }
+      
+        h3.book-name {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+    }
+    div.button-and-price-container{
+        display: flex;
+        flex-direction: column;
+    }
+  }

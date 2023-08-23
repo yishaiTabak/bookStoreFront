@@ -1,0 +1,39 @@
+div.delete-container {
+    div.delete-icon {
+        width: 35px;
+        height: 35px;
+        @extend %centering;
+        border-radius: 50%;
+        background-color: rgba(252, 0, 0, 0.356);
+        cursor: pointer;
+        margin-left: 5px;
+        &:hover{
+          opacity: 0.8;
+        }
+    }
+  
+      div.modal-text {
+        font-size: 1.4rem;
+        text-align: center;
+      }
+  
+      div.confirm-delete-buttons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 90px;
+        button.yes-btn {
+            background-color: red;
+            padding: 7px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.3rem;
+        }
+  
+        button.no-btn {
+            padding: 7px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.3rem;
+        }
+    }
+  }

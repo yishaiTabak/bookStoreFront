@@ -1,0 +1,8 @@
+.add-to-cart{
+    @extend %add-to-cart-btn;
+}
+.to-checkout{
+    @extend %add-to-cart-btn;
+    background-color: rgb(255, 89, 0);
+    background-color: $myPurple;
+}

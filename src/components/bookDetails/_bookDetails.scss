@@ -1,0 +1,132 @@
+div.book-details-page {
+    @extend %page-size;
+    background-color: antiquewhite;
+    div.book-details-container {
+      height: 100%;
+      display: flex;  
+      background-color: antiquewhite;
+      padding: 150px 40px;
+      justify-content: space-between;
+      .img-and-general-details{
+        height: 90%;
+        border-right:  1px black groove;
+        padding-right: 10px;
+        display: flex;
+        img {
+            margin-right: 20px;
+            height: 22vw;
+            width: 16vw;
+            min-width: 240px;
+            min-height: 300px;
+        }
+    
+        div.general-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            div.name-and-author {
+                margin-top: 10px;
+            div.name {
+                margin-bottom: 5px;
+                font-size: 1.8rem;
+                font-weight: 700;
+    
+            }
+    
+            div.author {
+                font-size: 0.8rem;
+            }
+            }
+    
+            div.price-and-buy {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            div.price {
+                font-size: 1.2rem;
+            }
+    
+            .add-to-cart-btn{
+                transform: scale(1.2);
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+            }
+        }
+        }
+  
+      div.description-container {
+        width: 50%;
+        padding-left: 5px;
+        h2.description-header {
+            text-align: center;
+        }
+  
+        div.description {
+  
+        }
+      }
+    }
+  }
+@media (max-width: 700px)
+  {
+    div.book-details-page {
+        div.book-details-container {
+            flex-direction: column;
+          div.img-and-general-details {
+            border: none;
+            img {
+      
+            }
+      
+            div.general-details {
+              div.name-and-author {
+                div.name {
+                    font-size: 1.6rem;
+                }
+      
+                div.author {
+                    font-size: 0.9rem;
+                }
+              }
+      
+              div.price-and-buy {
+                showprice {
+                  div.add-to-cart-btn {
+                    addtocartbtn {
+      
+                    }
+                  }
+                }
+              }
+            }
+          }
+      
+          div.description-container {
+            width: 100%;
+            h2.description-header {
+      
+            }
+      
+            div.description {
+      
+            }
+          }
+        }
+      }
+        
+  }
+
+  @media (max-width: 500px){
+    div.book-details-page {
+        div.book-details-container {
+            padding:50px  0;
+          div.img-and-general-details {
+            transform: scale(0.75);
+            position: relative;
+            right: 35px;
+        }
+    }
+}
+  }
